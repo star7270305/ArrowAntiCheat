@@ -71,6 +71,13 @@ import static org.bukkit.Bukkit.getServer;
 
 // all comments on the classes were written on 13/05/2026, 2:42:30 AM GMT+2. :D
 
+
+//Credits:
+//
+//https://modrinth.com/plugin/packetevents
+//
+//https://github.com/NikV2/AnticheatBase
+
 public final class Arrow {
     @Getter
     private static Arrow instance;
