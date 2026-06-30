@@ -887,13 +887,15 @@ public class ReachA extends Check {
 
         double halfWidth = width * 0.5D;
 
+        // idk why use floats here instead of doubles but original code use it
+        // System.out.println("Box bounds: " + (x - halfWidth - horizontalExpand) + " to " + (x + halfWidth + horizontalExpand));
         return new BoundingBox(
-                (float) (x - halfWidth - horizontalExpand),
-                (float) (y - verticalExpand),
-                (float) (z - halfWidth - horizontalExpand),
-                (float) (x + halfWidth + horizontalExpand),
-                (float) (y + height + verticalExpand),
-                (float) (z + halfWidth + horizontalExpand)
+                x - halfWidth - horizontalExpand,
+                y - verticalExpand,
+                z - halfWidth - horizontalExpand,
+                x + halfWidth + horizontalExpand,
+                y + height + verticalExpand,
+                z + halfWidth + horizontalExpand
         );
     }
 
